@@ -1,291 +1,970 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Required Title Section -->
-    <title>TINYONE</title>
-    <!-- Favicon Icon Section -->
-    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
-    <!-- Font Awesome Section -->
-    <script src="https://kit.fontawesome.com/30fdb1dcd2.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap Section -->
+  <head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="E-School">
+    <meta name="description" content="It's an online based learning platform.">
+    <meta name="keywords" content="Learning website">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="ridin">
+
+
+    <!--font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--css links-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
+    <!--icon links-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Travel</title>
+  </head>
 
-</head>
-<body bgcolor="#fcdb00;">
-    
-    <!-- header start -->
+  <body>
+    <!--header start--> 
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/ttt.png" alt="Minimo" width="50%">
+      <div class="container">
+      <!--navbar--> 
+        <nav class="navbar navbar-expand-lg c_nav">
+  <div class="container-fluid px-0">
+    <!--logo-->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/lll.png"alt="E-School">
+    </a>
+
+    <button class="navbar-toggler nto" type="button" data-bs-toggle="collapse" data-bs-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--menu-->
+    <div class="collapse navbar-collapse menu" id="nav1">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Others</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+      </ul>
+
+      <!--search-->
+      
+
+      <button type="button" class="btn btn-primary btn_cmn btn_search" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Sign in
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+       <div class="modal-dialog">
+        <div class="modal-content b_color">
+          
+          <div class="modal-body ">
+          <div class="offset-md-2 col-md-8">
+            <h4>Travel log in</h4>
+          </div>
+      <!--form-->
+            <form class="row g-3 needs-validation" novalidate>
+           <div class="offset-md-2 col-md-8">
+            <div class="input-group has-validation">
+      
+             <input type="text" placeholder="Enter Your Username" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+             Please choose a username.
             </div>
-            <nev class="menu">
-                <ul>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    
-                </ul>
-            </nev>
-        </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            </div>
+          </div>
+
+       <div class="offset-md-2 col-md-8">
+        <input type="password" placeholder="Enter Your Password" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid password.
+          </div>
+          <div class="valid-feedback">
+        Looks good!
+       </div>
+    </div>
+
+      <div class="offset-md-2 col-md-8">
+        <div class="form-check">
+         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+       </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+       </div>
+      </div>
+    </div>
+
+        <div class="offset-md-2 col-md-8">
+            <button class="btn btn-primary btn_cmn btn_login" type="submit">Log in</button>
+         </div>
+       </form>
+
+            </div>   
+          </div>
+         </div>
+       </div>
+    </div>
+  </div>
+</nav>
+
+      </div>
     </header>
-    <!-- header end -->
+    <!--header end-->
 
-      <!-- Slider Section html Start -->
-      <section class="slider">
-          <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="slider_content">
-                        <div class="common_header_title">
-                            <h2>Inspire your inspiration</h2>
-                        </div>
-                        <div class="common_under_headertext">
-                            <h6>Simple to use for your app, products<br> showcase and your inspirat</h6>
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Praesent vitae eros eget tellus tristique bibendum. Donec<br> rutrum sed sem quis venenatis. Proin viverra risus a eros <br>volutpat tempor. In quis arcu et eros porta lobortis sit
-                        </p>
+    <!--banner start-->
+    <section class="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--banner text-->
+          <div class="col-xl-5 col-lg-6 order-2 order-lg-1">
+            <div class="b_text">
 
-                        <ul>
-                            <li><a href="#">
-                                <img src="images/lll.png" alt="" width="10%" >
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="iphone_design">
-                        <img src="resources/img/iphone.png" alt="">
-                        <div class="iphone_logo">
-                            <img src="resources/img/iphone_display.png" alt="">
-                        </div>
-                    </div>
+           
+               
+                
+                <h1 class="bh1"> Hi ! I am Jovvy</h1><br><br>
+                <h2>I am a buiesness <span>Profetional Spesializing <span>in many indritrius</span></span></h2><br><br>
 
-                </div>
+                <p>Paragraph Cove
+Paragraph Cove
+For daily cute, love able paragraphs for girlfriend and boyfriend. Here at www.ParagraphCove.com get — Dating, Marriage and Relationship advice and tips.</p><br><br><br>
+
+<button>Luern more <span>-></span></button><br><br><br>
+
+
+<span><- Back</span>
+  <span>-></span>
+
+  <span><- Next</span>
+  <span>-></span>
+             
             </div>
           </div>
-      </section>
-      <!-- Slider Section html End -->
-
-
-      <!-- Features Section html Start -->
-      <section class="feature">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                    <div class="feature_content">
-                        <div class="common_header_title">
-                            <h2>Tinyone features</h2>
-                        </div>
-                        <div class="common_under_headertext">
-                            <h6>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus <br>tristique bibendum. Donec rutrum sed sem quis venenatis.
-                            </h6>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_1.png" alt="">
-                          <div class="icon_content">
-                            <h4>Fully Responsive</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_3.png" alt="">
-                          <div class="icon_content">
-                            <h4>Fully Layered PSD</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_5.png" alt="">
-                          <div class="icon_content">
-                            <h4>Font Awesome Icons</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_2.png" alt="">
-                          <div class="icon_content">
-                            <h4>HTML5 & CSS3</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_4.png" alt="">
-                          <div class="icon_content">
-                            <h4>Email Template</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="feature_icon">
-                        <img src="resources/css/img/icon_6.png" alt="">
-                          <div class="icon_content">
-                            <h4>Free to download</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
-                            </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+          <!--banner img-->
+          <div class="offset-xl-1 col-xl-6 col-lg-6 order-1 order-lg-2">
+            <div class="b_img">
+            </div>
           </div>
-      </section>
-      <!-- Features Section html End -->
+        </div>
+      </div>
+    </section>
+    <!--banner end--><br><br><br><br>
 
 
-      <!-- Subscription Section html Start -->
-      <section class="subscription">
-          <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                    <div class="subscription_text">
-                        <div class="common_header_title">
-                            <h2>Keep in touch with us</h2>
-                        </div>
-                        <div class="common_under_headertext">
-                            <h6 class="xcolor">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus <br>tristique bibendum. Donec rutrum sed sem quis venenatis.
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="subscription_input">
-                            <input type="text" name="email" id="" class="form-control" placeholder="Enter your email to update">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="submit_btn">
-                            <button class="btn  btn-warning">Submit</button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sub_icon">
-                            <ul>
-                                <li><a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a></li>
-                                <li><a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a></li>
-                                <li><a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a></li>
-                                <li><a href="#">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <!--about start-->
+     <section class="testimony c_padding">
+       <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-lg-4">
+             <div class="cmn_title text-center">
+               <h1 class="cmn_h1 mb-0">ABOUT US</h1>
+               <br><br><hr>
+             </div>
+           </div>
+         </div>
 
-              </div>
+         <div class="row justify-content-center">
+           <div class="col-lg-8 col-md-10">
+             
+    <div id="cei" class="carousel slide" data-bs-ride="carousel">
+  <!--inner-->
+  <div class="carousel-inner">
+   <!--item start--> 
+    <div class="carousel-item active t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/aaa.jpg" alt="E-School">
           </div>
-      </section>
-      <!-- Subscription Section html End -->
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">SCIENTISTS HAVE LEARNED TO SUPPLEMENT THE SENSE OF SIGHT IN NUMEROUS WAYS. In front of the tiny pupil of the eye they put, on Mount Palomar, a great monocle 200 inches in diameter, and with it see 2000 times farther into the depths of space. Or they look through a small pair of lenses arranged as a microscope into a drop of water or blood, and magnify by as much as 2000 diameters the living creatures there, many of which are among man’s most dangerous enemies. Or, if we want to see distant happenings on earth, they use some of the previously wasted electromagnetic waves to carry television images which they re-create as light by whipping tiny crystals on a screen with electrons in a vacuum. Or they can bring happenings of long ago and far away as colored motion pictures, by arranging silver atoms and color-absorbing molecules to force light waves into the patterns of original reality. Or if we want to see into the center of a steel casting or the chest of an injured child, they send the information on a beam of penetrating short-wave X rays, and then convert it back into images we can see on a screen or photograph. THUS ALMOST EVERY TYPE OF ELECTROMAGNETIC RADIATION YET DISCOVERED HAS BEEN USED TO EXTEND OUR SENSE OF SIGHT IN SOME WAY.
 
-
-      <!-- Footer Section html Start -->
-      <footer id="footer">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-3">
-                      <div class="footer_address">
-                        <p>
-                            HALOVIETNAM LTD<br>
-                            66, Dang Van ngu, Dong Da<br>
-                            Hanoi, Vietnam
-                        </p>
-                        <p>contact@halovietnam.com</p>
-                        <p>+844 35149182</p>
-                      </div>
-                  </div>
-                  <div class="col-md-9">
-                      <div class="row">
-                          <div class="col-md-3">
-                              <div class="f_footer_menu">
-                                <ul>
-                                    <li><a href="#">Examples</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">License</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          <div class="col-md-3">
-                              <div class="f_footer_menu">
-                                <ul>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Terms</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          <div class="col-md-3">
-                              <div class="f_footer_menu">
-                                <ul>
-                                    <li><a href="#">Download</a></li>
-                                    <li><a href="#">Support</a></li>
-                                    <li><a href="#">Documents</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          <div class="col-md-3">
-                              <div class="f_footer_menu">
-                                <ul>
-                                    <li><a href="#">Media</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Forms</a></li>
-                                </ul>
-                              </div>
-                            </div>
-
-                          </div>
-                      </div>
-
-                  </div>
-              </div>
+George Harrison, “Faith and the Scientist”</p>
           </div>
-      </footer>
-      <!-- Footer Section html End -->
+        </div>
+      </div>
+    </div>
+   <!--item end-->
 
-    <script src="vendors/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/js/custom.js"></script>
-</body>
+   <!--item start--> 
+    <div class="carousel-item t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/aaa.jpg" alt="E-School">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">SCIENTISTS HAVE LEARNED TO SUPPLEMENT THE SENSE OF SIGHT IN NUMEROUS WAYS. In front of the tiny pupil of the eye they put, on Mount Palomar, a great monocle 200 inches in diameter, and with it see 2000 times farther into the depths of space. Or they look through a small pair of lenses arranged as a microscope into a drop of water or blood, and magnify by as much as 2000 diameters the living creatures there, many of which are among man’s most dangerous enemies. Or, if we want to see distant happenings on earth, they use some of the previously wasted electromagnetic waves to carry television images which they re-create as light by whipping tiny crystals on a screen with electrons in a vacuum. Or they can bring happenings of long ago and far away as colored motion pictures, by arranging silver atoms and color-absorbing molecules to force light waves into the patterns of original reality. Or if we want to see into the center of a steel casting or the chest of an injured child, they send the information on a beam of penetrating short-wave X rays, and then convert it back into images we can see on a screen or photograph. THUS ALMOST EVERY TYPE OF ELECTROMAGNETIC RADIATION YET DISCOVERED HAS BEEN USED TO EXTEND OUR SENSE OF SIGHT IN SOME WAY.
+
+George Harrison, “Faith and the Scientist”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--item end-->
+
+   <!--item start--> 
+    <div class="carousel-item t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/aaa.jpg" alt="E-School">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">SCIENTISTS HAVE LEARNED TO SUPPLEMENT THE SENSE OF SIGHT IN NUMEROUS WAYS. In front of the tiny pupil of the eye they put, on Mount Palomar, a great monocle 200 inches in diameter, and with it see 2000 times farther into the depths of space. Or they look through a small pair of lenses arranged as a microscope into a drop of water or blood, and magnify by as much as 2000 diameters the living creatures there, many of which are among man’s most dangerous enemies. Or, if we want to see distant happenings on earth, they use some of the previously wasted electromagnetic waves to carry television images which they re-create as light by whipping tiny crystals on a screen with electrons in a vacuum. Or they can bring happenings of long ago and far away as colored motion pictures, by arranging silver atoms and color-absorbing molecules to force light waves into the patterns of original reality. Or if we want to see into the center of a steel casting or the chest of an injured child, they send the information on a beam of penetrating short-wave X rays, and then convert it back into images we can see on a screen or photograph. THUS ALMOST EVERY TYPE OF ELECTROMAGNETIC RADIATION YET DISCOVERED HAS BEEN USED TO EXTEND OUR SENSE OF SIGHT IN SOME WAY.
+
+George Harrison, “Faith and the Scientist”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--item end-->
+  </div>
+</div>         
+
+           </div>
+         </div>
+       </div>
+     </section>
+     <!--about end--><br><br><br><br>
+
+
+    <!--survice strt-->
+
+
+    <section class="course c_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+             <div class="cmn_title text-center">
+
+
+               <h1 class="cmn_h1 mb-0">Survises</h1><br><br><hr>
+
+               <p> </p>
+             </div>
+           </div>
+        </div>
+        <div class="row"><br><br>
+             <!-- course start--><br><br><br><br>
+
+          <!-- single course start -->
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/gaa.jpg" alt="">
+              </div>
+              <h2 class="c_h2">Counecting</h2>
+              <p class="c_p mb-0">Many people travel for different purposes.</p>
+              <a class="btn btn_cmn btn_buy" href="#"></a>
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/gbb.jpg" alt="">
+              </div>
+              <h2 class="c_h2">Desine And Devloping </h2>
+              <p class="c_p mb-0">Many people travel for different purposes.</p>
+              <a class="btn btn_cmn btn_buy" href="#"></a>
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/gcc.jpg" alt="">
+              </div>
+              <h2 class="c_h2">Report Writing</h2>
+              <p class="c_p mb-0">Many people travel for different purposes.</p>
+              <a class="btn btn_cmn btn_buy" href="#"></a>
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+        </div>
+      </div>
+    </section>
+
+     
+
+
+
+     
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end --><br><br><br><br>
+
+
+<!--survice end-->
+
+
+
+
+<!-- Product start-->
+
+
+    <section class="course c_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+             <div class="cmn_title text-center">
+
+
+               <h1 class="cmn_h1 mb-0">Product</h1>
+               <br><br><hr>
+
+               <p> </p>
+             </div>
+           </div>
+        </div>
+        <div class="row"><br><br>
+             <!-- course start--><br><br><br><br>
+
+          <!-- single course start -->
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/laptop.jpg" alt=""><br><br><br><br>
+              </div>
+              <h2 class="c_h2">Laptop</h2>
+
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">90000 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/computer.jpg" alt=""><br><br><br><br>
+              </div><br><br>
+              <h2 class="c_h2">Computer </h2>
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">100000 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/watch.jpg" alt="">
+              </div>
+              <h2 class="c_h2"> Mobile Watch</h2>
+
+                <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">5000 tk</p>
+            
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+
+    <section class="course c_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+             <div class="cmn_title text-center">
+
+
+               <h1 class="cmn_h1 mb-0"></h1>
+
+               <p> </p>
+             </div>
+           </div>
+        </div>
+        <div class="row"><br><br>
+             <!-- course start--><br><br><br><br>
+
+          <!-- single course start -->
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/i-phone.jpg" alt=""><br><br><br><br>
+              </div>
+              <h2 class="c_h2">i-phone</h2>
+
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">100000 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/phone.jpg" alt=""><br><br><br><br>
+              </div>
+              <h2 class="c_h2">Phone</h2>
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">50000 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/button.jpg" alt=""><br><br><br><br>
+              </div>
+              <h2 class="c_h2">Button Phone</h2>
+
+                <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">2000 tk</p>
+            
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+
+
+
+    <section class="course c_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+             <div class="cmn_title text-center">
+
+
+               <h1 class="cmn_h1 mb-0"></h1>
+
+               <p> </p>
+             </div>
+           </div>
+        </div>
+        <div class="row"><br><br>
+             <!-- course start--><br><br><br><br>
+
+          <!-- single course start -->
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/pen.png" alt=""><br><br><br><br>
+              </div>
+              <h2 class="c_h2">Pen</h2>
+
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">50 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/book.jpg" alt=""><br><br><br>
+              </div>
+              <h2 class="c_h2">Book</h2>
+               <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">100 tk</p>
+             
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+          <div class="col-lg-4">
+            <div class="c_single">
+              <div class="c_img">
+                <img class="w-100" src="images/chair.jpg" alt=""><br><br><br>
+              </div>
+              <h2 class="c_h2"> Chair</h2>
+
+                <a class="btn btn_cmn btn_buy" href="#">Buy Now</a>
+              <p class="c_p mb-0">70000 tk</p>
+            
+
+              <div class="c_footer overflow-hidden">
+                <div class="c_left float-start">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                      
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="c_right float-end">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item cli">
+                     
+                    </li>
+                    <li class="list-inline-item cli">
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single course end -->
+
+
+
+
+
+
+
+         
+          <!-- single course end -->
+
+
+
+<!--Product end--><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<br><br><br> <!--testimony start-->
+     <section class="testimony c_padding">
+       <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-lg-4">
+             <div class="cmn_title text-center">
+               <h1 class="cmn_h1 mb-0">Testimony</h1><br><br><br>
+             </div>
+           </div>
+         </div>
+
+         <div class="row justify-content-center">
+           <div class="col-lg-8 col-md-10">
+             
+    <div id="cei" class="carousel slide" data-bs-ride="carousel">
+  <!--inner-->
+  <div class="carousel-inner">
+   <!--item start--> 
+    <div class="carousel-item active t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/ppp.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--item end-->
+
+   <!--item start--> 
+    <div class="carousel-item t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/nnn.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--item end-->
+
+   <!--item start--> 
+    <div class="carousel-item t_item" data-bs-interval="3000">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="t_img">
+            <img class="w-100" src="images/ggg.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="t_text">
+            <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--item end-->
+  </div>
+</div>         
+
+           </div>
+         </div>
+       </div>
+     </section>
+     <!--testimony end--><br><br><br><br><br><br><br><br><hr><hr><hr><hr><hr>
+
+
+
+     
+
+     <!--footer start-->
+     <section class="footer_top">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-5 col-sm-12">
+             <div class="ft_details">
+               <p>Millions of people of all ages and from around the world are improving their lives with us</p>
+               <p class="mb-0">Millions of people of all ages and from around the world are improving their lives with us</p>
+             </div>
+           </div>
+           <div class="col-lg col-sm-4">
+             <div class="ft_links">
+               <h2>Course</h2>
+               <ul class="list-unstyled mb-0">
+                 <li><a href="#">Graphic Design</a></li>
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Business</a></li>
+                 <li><a href="#">Marketing</a></li>
+                 <li><a href="#">Engineering</a></li>
+               </ul>
+             </div>
+           </div>
+           <div class="col-lg col-sm-4">
+             <div class="ft_links">
+               <h2>Terms</h2>
+               <ul class="list-unstyled mb-0">
+                 <li><a href="#">Graphic Design</a></li>
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Business</a></li>
+                 <li><a href="#">Marketing</a></li>
+                 <li><a href="#">Engineering</a></li>
+               </ul>
+             </div>
+           </div>
+           <div class="col-lg col-sm-4">
+             <div class="ft_links">
+               <h2>Useful Link</h2>
+               <ul class="list-unstyled mb-0">
+                 <li><a href="#">Graphic Design</a></li>
+                 <li><a href="#">Web Design</a></li>
+                 <li><a href="#">Business</a></li>
+                 <li><a href="#">Marketing</a></li>
+                 <li><a href="#">Engineering</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+
+     <!--footer bottom-->
+     <section class="footer_bottom">
+       <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-lg-3 ftb text-center">
+             <p class="mb-0"><a href="#">Creator:Ridin Khan 2024</a></p>
+           </div>
+         </div>
+       </div>
+     </section>
+
+     <!--footer end-->
+
+    <!--js links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+
+

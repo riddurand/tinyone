@@ -1,85 +1,52 @@
-/* ======================================
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-Template Name: TINYONE
-Template URI: G:\New Tutorial\WD\UY Lab\Files\01-Basic PSD
-Author: Dedarul Hasan
-Author URI: https://www.facebook.com/WhiteDevil2k/
-Version: 1.0
-Description: An awesome personal blog template.
-Support: mddedarulhasan@gmail.com
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:wght@300&display=swap');
 
-========================================*/
-
-/* ======================================
-
-CSS INDEX
----------
-1. Google Fonts
-2. Common Css
-3. Reusable
-4. Navbar Css
-5. Slider Css
-6. Feature Css
-7. Subscription Css
-8. Footer Css
-
-========================================*/
-/*==================================== 
-            1. Google Font Css
-====================================*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
-
-/*==================================== 
-            2. Common Css
-====================================*/
-*{
+/* Common css start */
+body{
     margin: 0;
-    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 400px;
+    
 }
-
-html,body{
-    line-height: 1.2;
-    font-family: 'PT Sans', sans-serif;
-}
-ul,ol{
-    list-style-type: none;
-}
-a, a:hover{
-    text-decoration: none;
-}
-
+/* common css end */
 
 /* header start */
 
 header{
     padding: 25px 0;
-    border-bottom: 1px solid #626262;
+   
+    background-image: url(../images/hhh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 
 }
 .container{
-    /* border: 1px solid green; */
+    
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 .logo{
-    /* border: 1px solid red; */
-    margin-top: 10px;
+    
+    margin-top: -163px;
     width: 12%;
     float: left;
 }
 
 .logo a img{
-    width: 40%;
+    width: 100%;
 }
 
 
 .w100{
-    width: 100%;
+    width: 410%;
 }
 .menu{
-    /* border: 1px solid red; */
+   
     width: 65%;
     float: right;
 }
@@ -91,11 +58,11 @@ header{
     float: left;
 }
 .menu ul li a{
-    margin: 0 50px;
+    margin: 0 -10px;
     text-transform: uppercase;
     color: #626262;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
+   
     transition: 0.33s;
 }
 .menu ul li a:hover{
@@ -105,169 +72,241 @@ header{
     margin-right: 0;
 }
 
+
+
+/* menu-section starts */
+
+.font-color{
+    color: #010003;
+}
+.menu a{
+    padding:8px 20px !important;
+    border-radius: 33px;
+    color:black;
+    font-size: 17px;
+    transition: all ease-in-out .3s;
+}
+.menu a:hover{
+    font-size: 20px;
+    border: none;
+    background-color: #21B573;
+    color: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 20px;
+}
+li span a {
+    color:black !important;
+}
+
+
 /* header end */
 
+/*banner start*/
 
-/*==================================== 
-        3. Reusable Css Start
-====================================*/
-.common_header_title h2{
+.banner{
+    padding: 0 0 65px;
+    background-image: url(../images/bbb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-position: center;
+
+}
+
+.banner img{
+    padding: 0 0 65px;
+    background-image: url(../images/bbb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-position: center;
+
+
+}
+
+.b_text{
+    padding: 30px 0 40px;
+}
+
+.bp1{
+    color: var(--red);
+}
+
+.bh1{
+    margin: 10px 0 20px;
+    font-family: poppins;
+    font-size: 48px;
+    font-weight: 700
+    font-height:70px ;
+    text-align: left;
+}
+
+.bh1 span{
+    color: var(--green);
+
+}
+
+.bp2{
+    line-height: 36px;
+}
+
+.b_link{
+    padding: 12px 36px;
+}
+
+.b_img{
+    text-align: right;
+    
+}
+.b_img img{
+}
+
+.button hover{font-size: 20px;
+    border: none;
+    background-color: #21B573;
+    color: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 20px;}
+
+/*banner end*/
+
+/*features start*/
+
+.features{
+  
+}
+.features_content{
+    overflow: hidden;
+}
+.single_features{
+    margin-top: 70px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+.single_features:nth-child(even){
+    margin-left: 6%;
+}
+.features_img{
+    width: 10%;
+    margin-bottom: 20px;
+}
+
+/*features end*/
+/*online cource start*/
+.cource{
+
+}
+
+.cm_tittle{
+
+}
+
+.cm_h1{
+    
+    font-size: 36px;
     font-weight: 700;
-    font-size: 28px;
-    text-transform: capitalize;
-}
-.common_under_headertext h6{
-    color: #313841;   
-    font-size: 17px;
-    padding: 10px 0;
+    line-height: 54px;
+    list-style: ;
+    text-align: left;
+
 }
 
-/*==================================== 
-        4. Navbar Css Start
-====================================*/
-.bg-light {
-	background-color: #fcdb00 !important;
+
+
+/*online cource end*/
+
+
+/* Blog start */
+.footer{
+  
 }
-.navbar{
-    text-align: center;
-    padding-top: 30px;
+.footer_content{
+    overflow: hidden;
 }
-.navbar-nav .nav-item {
-    padding: 0 35px;
+.single_blg{
+    margin-top: 70px;
+    width: 47%;
+    float: left;
+    box-sizing: border-box;
 }
-.navbar-nav .nav-item .nav-link{
-	font-weight: 700;
-    font-size: 18px;
-    color: #000;
+.single_blg:nth-child(even){
+    margin-left: 6%;
+}
+.blg_img{
+    margin-bottom: 20px;
 }
 
-/*==================================== 
-        5. Slider Css Start
-====================================*/
-.slider{
-    background-color: #fcdb00;
-    padding-bottom: 80px;
+.w100{
+    font-size: 405px;
 }
-.slider_content{
-    padding-top: 90px;
-}
-.slider_content p{
-    color: #555;
-    font-size: 16px;
-}
-.iphone_design {
-	position: relative;
-	padding-top: 30px;
-	padding-left: 145px;
-}
-.iphone_logo {
-	position: absolute;
-	top: 50%;
-	left: 44%;
-}
-.slider_content ul {
-	padding: 0;
-	padding-top: 30px;
+/* Blog  end */
+/* item start*/
+.item{
+
 }
 
-/*==================================== 
-        6. Feature Css Start
-====================================*/
-.feature{
-    margin-bottom: 50px;
+.item_img{
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    padding: 50px;
 }
-.feature_content{
-    text-align: center;
-    padding: 100px 0;
-}
-.feature_icon{
-    position: relative;
-    padding-bottom: 100px;
-}
-.icon_content{
-    position: absolute;
-    left: 20%;
-    top: 0;
-}
-.icon_content p{
-    color: #898989;
+/* item end*/
+
+
+
+/* footer start */
+.w_100{
+    font-size: 170px;
 }
 
-/*==================================== 
-        7. Subscription Css Start
-====================================*/
-.subscription{
-    background: #010101;
+.banner{
+    padding: 0 0 65px;
+    background-color: #c6f7e6;
 }
-.subscription_text{
-    text-align: center;
-    color: #fcdb00;
-    padding-top: 100px;
+
+.b_text{
+    padding: 30px 0 40px;
 }
-.xcolor{
-    color: #898989;
+
+.bp1{
+    color: var(--red);
 }
-.subscription_input{
-    padding-left: 335px;
-    padding-bottom: 40px;
-}
-.subscription_input input:focus{
-    box-shadow: 0 0 0;
-    border-color: #fff;
-}
-.submit_btn button{
-    padding: 7px 40px;
-    text-transform: uppercase;
+
+.bh1{
+    margin: 10px 0 20px;
+    font-family: poppins;
+    font-size: 48px;
     font-weight: 700;
+    font-height:70px ;
+    text-align: left;
 }
 
-.sub_icon{
-    text-align: center;
-}
-.sub_icon ul{
-    display: flex;
-    justify-content: center;
-}
-.sub_icon ul li{
-    padding-right: 30px;
-}
-.sub_icon ul li a {
-	font-size: 30px;
-	background-color: #fcdb00;
-	width: 50px;
-	height: 50px;
-	display: block;
-	line-height: 50px;
-	border-radius: 20%;
-}
-.sub_icon ul li a i{
-	color: #000;
-}
-/* .sub_icon ul li a:hover {
-    background-color: #fff;
-    color: #fcdb00;
-} */
+.bh1 span{
+    color: var(--green);
 
+}
 
-/*==================================== 
-        8. Footer Css Start
-====================================*/
-#footer{
-    padding: 130px 0;
-    background-color: #010101;
+.bp2{
+    line-height: 36px;
 }
-.footer_address{
-    color: #fff;
+
+.b_link{
+    padding: 12px 36px;
 }
-.f_footer_menu{
-    display: flex;
+
+.b_img{
+    text-align: right;
+    
 }
-.f_footer_menu ul li a:hover{
-    color: #fcdb00;
+.b_img img{
 }
-.f_footer_menu ul li a{
-    color: #fff;
-}
-.f_footer_menu ul li{
-    padding: 0 0 10px 40px;
-}
+
+.button hover{font-size: 20px;
+    border: none;
+    background-color: #21B573;
+    color: #fff !important;
+    padding: 8px 20px !important;
+    border-radius: 20px;}
+/* footer end */
